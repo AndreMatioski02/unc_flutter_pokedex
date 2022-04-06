@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:unc_flutter_pokedex/api/pokeapi.dart';
 import 'package:unc_flutter_pokedex/models/PokeModel.dart';
+import 'package:unc_flutter_pokedex/widgets/pokemon_grid.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
