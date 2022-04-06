@@ -1,7 +1,7 @@
 # unc_flutter_pokedex
 André Vinícius Matioski 
 
-Projeto utilizando Flutter em desenvolvimento juntamente com a matéria Desenvolvimento de Aplicações Móveis - 5º fase engenharia de Software
+Projeto utilizando Flutter em desenvolvimento juntamente com a matéria Desenvolvimento de Aplicações Móveis - 5º fase Engenharia de Software
 
 ## Objetivo
 
