@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class PokemonCardBackground extends StatelessWidget {
+class TypeCardBackground extends StatelessWidget {
   final int id;
-  const PokemonCardBackground({ 
+  const TypeCardBackground({ 
     Key? key, 
     required this.id 
   }) : super(key: key);

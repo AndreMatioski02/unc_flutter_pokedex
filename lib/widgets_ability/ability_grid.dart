@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:unc_flutter_pokedex/models/PokeModel.dart';
-import 'package:unc_flutter_pokedex/widgets/pokemon_card.dart';
+import 'package:unc_flutter_pokedex/models/AbilityModel.dart';
+import 'package:unc_flutter_pokedex/widgets_ability/ability_card.dart';
 
-class PokemonGrid extends StatefulWidget {
-  // Criando a listagem que irá receber os Pokemons
-  final List<Pokemon> pokemon;
-  const PokemonGrid({ 
+class AbilityGrid extends StatefulWidget {
+  // Criando a listagem que irá receber os Abilitys
+  final List<Ability> ability;
+  const AbilityGrid({ 
     Key? key,
-    required this.pokemon
+    required this.ability,
   }) : super(key: key);
 
   @override
-  State<PokemonGrid> createState() => _PokemonGridState();
+  State<AbilityGrid> createState() => _AbilityGridState();
 }
 // Iniciando um componente Front-End
-class _PokemonGridState extends State<PokemonGrid> {
+class _AbilityGridState extends State<AbilityGrid> {
   @override
   Widget build(BuildContext context) {
     // Obtendo a largura da tela do dispositivo
@@ -37,12 +37,11 @@ class _PokemonGridState extends State<PokemonGrid> {
       semanticChildCount: 250,
       childAspectRatio: 200 / 244,
       physics: const BouncingScrollPhysics(),
-      children: widget.pokemon
+      children: widget.ability
         .map(
-          (pokemon) => PokemonCard(
-            id: pokemon.id,
-            name: pokemon.name,
-            image: pokemon.img,
+          (ability) => AbilityCard(
+            id: ability.id,
+            name: ability.name
           ),
         )
         .toList(),

@@ -1,18 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:unc_flutter_pokedex/models/PokemonScreenData.dart';
-import 'package:unc_flutter_pokedex/widgets/pokemon_card_background.dart';
-import 'package:unc_flutter_pokedex/widgets/pokemon_card_data.dart';
+import 'package:unc_flutter_pokedex/models/ItemScreenData.dart';
+import 'package:unc_flutter_pokedex/widgets_item/item_card_background.dart';
+import 'package:unc_flutter_pokedex/widgets_item/item_card_data.dart';
 
-class PokemonCard extends StatelessWidget {
+class ItemCard extends StatelessWidget {
   final int id;
   final String name;
-  final String image;
 
-  const PokemonCard({ 
+  const ItemCard({ 
     Key? key,
     required this.id,
-    required this.name,
-    required this.image,    
+    required this.name,    
   }) : super(key: key);
 
   BoxDecoration getContainerDecoration() => BoxDecoration(
@@ -36,7 +34,7 @@ class PokemonCard extends StatelessWidget {
           Navigator.pushNamed(
             context,
             "/details",
-            arguments: PokemonScreenData(id, name, image),
+            arguments: ItemScreenData(id, name),
           )
         ),
         child: Container(
@@ -44,8 +42,8 @@ class PokemonCard extends StatelessWidget {
           decoration: getContainerDecoration(),
           child: Stack(
             children: [
-              PokemonCardBackground(id: id),
-              PokemonCardData(name: name, image:image),
+              ItemCardBackground(id: id),
+              ItemCardData(name: name),
             ],
           ),
         ),
