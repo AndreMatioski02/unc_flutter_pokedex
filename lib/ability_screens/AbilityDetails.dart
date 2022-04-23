@@ -12,7 +12,7 @@ class Details extends StatelessWidget {
     final arguments = 
       ModalRoute.of(context)!.settings.arguments as AbilityScreenData;
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.lightBlueAccent,
       body: SingleChildScrollView(
         padding: EdgeInsets.only(
           top: MediaQuery.of(context).padding.top,

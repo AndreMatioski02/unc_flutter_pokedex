@@ -29,7 +29,8 @@ class PokemonCardData extends StatelessWidget {
           "${name[0].toUpperCase()}${name.substring(1)}",
           style: const TextStyle(
             fontSize: 21,
-            color: Colors.black87,
+            color: Colors.blue,
+            fontWeight: FontWeight.bold,
           ),
         )
       ],

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:unc_flutter_pokedex/item_screens/ItemHome.dart';
-import 'package:unc_flutter_pokedex/item_screens/ItemDetails.dart';
+import 'package:unc_flutter_pokedex/pokemon_screens/PokemonHome.dart';
+import 'package:unc_flutter_pokedex/pokemon_screens/PokemonDetails.dart';
+
 void main () {
   // Chamando o APP para execução
   runApp(const App());
@@ -15,7 +16,7 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Pokédex',
       theme: ThemeData(
-        primarySwatch: Colors.green,
+        primarySwatch: Colors.blue,
       ),
       //Iniciando o conceito de navegação por rotas
       initialRoute: "/",

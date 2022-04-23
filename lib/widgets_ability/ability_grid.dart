@@ -41,7 +41,7 @@ class _AbilityGridState extends State<AbilityGrid> {
         .map(
           (ability) => AbilityCard(
             id: ability.id,
-            name: ability.name
+            name: ability.name,
           ),
         )
         .toList(),

@@ -41,7 +41,7 @@ class _TypeGridState extends State<TypeGrid> {
         .map(
           (type) => TypeCard(
             id: type.id,
-            name: type.name
+            name: type.name,
           ),
         )
         .toList(),

@@ -17,7 +17,7 @@ class DatailTitle extends StatelessWidget {
         "${name[0].toUpperCase()}${name.substring(1)}",
         style: const TextStyle(
           fontSize: 24,
-          color: Colors.black
+          color: Colors.blue
         ),
       ),
       avatar: CircleAvatar(

@@ -41,7 +41,7 @@ class _MoveGridState extends State<MoveGrid> {
         .map(
           (move) => MoveCard(
             id: move.id,
-            name: move.name
+            name: move.name,
           ),
         )
         .toList(),

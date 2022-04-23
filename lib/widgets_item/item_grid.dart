@@ -41,7 +41,7 @@ class _ItemGridState extends State<ItemGrid> {
         .map(
           (item) => ItemCard(
             id: item.id,
-            name: item.name
+            name: item.name,
           ),
         )
         .toList(),

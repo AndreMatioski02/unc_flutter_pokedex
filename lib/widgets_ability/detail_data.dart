@@ -18,10 +18,6 @@ class DatailData extends StatelessWidget {
             color: Colors.grey,
           ),
         ),
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(71),
-          topRight: Radius.circular(71),
-        ),
       ),
       child: Column(
         children: []

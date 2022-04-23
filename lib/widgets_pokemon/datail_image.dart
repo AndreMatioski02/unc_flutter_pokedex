@@ -13,7 +13,7 @@ class DatailImage extends StatelessWidget {
       constraints: const BoxConstraints(
         maxHeight: 500
       ),
-      color: Colors.black,
+      color: Colors.lightBlueAccent,
       child: Center(
         child: Stack(
           children: [
@@ -21,7 +21,7 @@ class DatailImage extends StatelessWidget {
               height: 500,
               width: 500,
               decoration: const BoxDecoration(
-                color: Colors.white60,
+                color: Colors.white,
                 shape: BoxShape.circle,
               ),
             ),
