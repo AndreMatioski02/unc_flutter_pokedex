@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; // Importação da biblioteca "Material", auxílio em desenvlvimento flutter
 
-class DatailImage extends StatelessWidget {
+class DatailImage extends StatelessWidget { // Iniciando um StatelessWidget e buscando as variáveis necessárias
   final String image;
   const DatailImage({ 
     Key? key,
@@ -8,7 +8,7 @@ class DatailImage extends StatelessWidget {
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { // Criação de um Widget para a exibição da imagem na página de detalhes
     return Container(
       constraints: const BoxConstraints(
         maxHeight: 500

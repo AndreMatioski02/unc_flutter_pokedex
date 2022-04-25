@@ -1,10 +1,10 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; // Importação da biblioteca "Material", auxílio em desenvlvimento flutter
 
-class DatailData extends StatelessWidget {
+class DatailData extends StatelessWidget { // Ininciando um StatelessWidget
   const DatailData({ Key? key }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { // Definindo um Widget para os dados a serem exibidos na página de detalhes
     return Container(
       constraints: BoxConstraints(
         minWidth: MediaQuery.of(context).size.width,

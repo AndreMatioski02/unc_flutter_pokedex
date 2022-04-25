@@ -1,4 +1,4 @@
-class Ability {
+class Ability { // Criação da classe "Ability" e definindo seus atributos
   int id;
   String name;
 

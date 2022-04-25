@@ -1,4 +1,4 @@
-class Type {
+class Type { // Criação da classe "Type" e definindo seus atributos
   int id;
   String name;
 

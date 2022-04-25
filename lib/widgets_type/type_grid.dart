@@ -24,12 +24,12 @@ class _TypeGridState extends State<TypeGrid> {
       ? 5
       : (width > 700)
         ? 4
-        : (width > 450) 
+        : (width > 450)
           ? 3
           : 2;
 
 
-    return GridView.count(
+    return GridView.count( // Definindo o layout do Grid
       padding: const EdgeInsets.all(7),
       crossAxisCount: crossAxisCount,
       crossAxisSpacing: 4,

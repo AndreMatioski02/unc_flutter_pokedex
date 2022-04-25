@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; // Importação da biblioteca "Material", auxílio em desenvlvimento flutter
 
-class PokemonCardBackground extends StatelessWidget {
+class PokemonCardBackground extends StatelessWidget { // Iniciando o StatelessWidget 
   final int id;
   const PokemonCardBackground({ 
     Key? key, 
@@ -8,7 +8,7 @@ class PokemonCardBackground extends StatelessWidget {
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { // Criação do Widget de definição do fundo da tela
     return Text(
       "$id",
        style: TextStyle(
@@ -19,20 +19,3 @@ class PokemonCardBackground extends StatelessWidget {
     ); 
   }
 }
-
-/* 
-body: Center(
-        child: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topRight,
-              end: Alignment.bottomLeft,
-              colors: [
-                Colors.blue,
-                Colors.red,
-              ]
-            )
-          ),
-        ),
-      ),
-*/

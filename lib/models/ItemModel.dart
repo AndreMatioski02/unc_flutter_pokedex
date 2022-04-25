@@ -1,4 +1,4 @@
-class Item {
+class Item { // Criação da classe "Item" e definindo seus atributos
   int id;
   String name;
 

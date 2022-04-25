@@ -1,10 +1,10 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; // Importação da biblioteca "Material", auxílio em desenvlvimento flutter
 
-class DatailBackButton extends StatelessWidget {
+class DatailBackButton extends StatelessWidget { // Iniciando um StatelessWidget
   const DatailBackButton({ Key? key }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { // Criando o Widget para adicionar o botão de voltar à pagina de detalhes
     return FloatingActionButton.extended(
       onPressed: () => Navigator.pop(context),
       tooltip: "Voltar",

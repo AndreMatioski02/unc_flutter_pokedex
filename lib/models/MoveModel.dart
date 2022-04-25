@@ -1,4 +1,4 @@
-class Move {
+class Move { // Criação da classe "Move" e definindo seus atributos
   int id;
   String name;
 

@@ -29,7 +29,7 @@ class _PokemonGridState extends State<PokemonGrid> {
           : 2;
 
 
-    return GridView.count(
+    return GridView.count( // Definindo o layout do Grid
       padding: const EdgeInsets.all(7),
       crossAxisCount: crossAxisCount,
       crossAxisSpacing: 4,

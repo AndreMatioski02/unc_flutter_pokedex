@@ -1,9 +1,10 @@
-import 'package:flutter/material.dart';
-import 'package:unc_flutter_pokedex/models/PokemonScreenData.dart';
-import 'package:unc_flutter_pokedex/widgets_pokemon/pokemon_card_background.dart';
-import 'package:unc_flutter_pokedex/widgets_pokemon/pokemon_card_data.dart';
+import 'package:flutter/material.dart'; // Importação da biblioteca "Material", auxílio em desenvlvimento flutter
+import 'package:unc_flutter_pokedex/models/PokemonScreenData.dart'; // Importando o model "PokemonScreenData.dart" da pasta "models"
 
-class PokemonCard extends StatelessWidget {
+import 'package:unc_flutter_pokedex/widgets_pokemon/pokemon_card_background.dart'; // importando os widgets
+import 'package:unc_flutter_pokedex/widgets_pokemon/pokemon_card_data.dart';        // da pasta "widgets_type"
+
+class PokemonCard extends StatelessWidget { // Iniciando um StatelessWidget e buscando as variáveis necessárias
   final int id;
   final String name;
   final String image;
@@ -15,7 +16,7 @@ class PokemonCard extends StatelessWidget {
     required this.image,    
   }) : super(key: key);
 
-  BoxDecoration getContainerDecoration() => BoxDecoration(
+  BoxDecoration getContainerDecoration() => BoxDecoration( // Definindo o formato de cada card que será mostrado
     borderRadius: BorderRadius.circular(24),
     border: Border.all(
       color: Colors.grey.withOpacity(0.24),
@@ -24,7 +25,7 @@ class PokemonCard extends StatelessWidget {
   );
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { // Criando Widget para definição de layout dos cards
     return Material(
       color: Colors.white,
       borderRadius: BorderRadius.circular(24),

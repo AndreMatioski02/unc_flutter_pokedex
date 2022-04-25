@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; // Importação da biblioteca "Material", auxílio em desenvlvimento flutter
 
-class ItemCardData extends StatelessWidget {
+class ItemCardData extends StatelessWidget { // Iniciando um StatelessWidget para os dados contidos em cada card
   final String name;
 
   const ItemCardData({ 
@@ -9,12 +9,12 @@ class ItemCardData extends StatelessWidget {
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { // Criação do Widget
     return Column(
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
         const Divider(),
-        Text(
+        Text( // Definindo o layout para o Texto contido no card
           "${name[0].toUpperCase()}${name.substring(1)}",
           style: const TextStyle(
             fontSize: 21,

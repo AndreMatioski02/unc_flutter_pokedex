@@ -1,17 +1,17 @@
-import 'package:flutter/material.dart';
-import 'package:unc_flutter_pokedex/pokemon_screens/PokemonHome.dart';
-import 'package:unc_flutter_pokedex/pokemon_screens/PokemonDetails.dart';
+import 'package:flutter/material.dart'; // Importação da biblioteca "Material", auxílio em desenvlvimento flutter
+import 'package:unc_flutter_pokedex/pokemon_screens/PokemonHome.dart'; // Importando a tela Home de pokemons da pasta "pokemon_screens"
+import 'package:unc_flutter_pokedex/pokemon_screens/PokemonDetails.dart'; // Importando a tela Details de pokemons da pasta "pokemon_screens"
 
 void main () {
   // Chamando o APP para execução
   runApp(const App());
 }
 
-class App extends StatelessWidget {
+class App extends StatelessWidget { // Ininciando um StatelessWidget
   const App({ Key? key }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { // Criando um Widget para definição de layout padrão do aplicativo
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Pokédex',

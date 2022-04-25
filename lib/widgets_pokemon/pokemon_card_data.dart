@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; // Importação da biblioteca "Material", auxílio em desenvlvimento flutter
 
-class PokemonCardData extends StatelessWidget {
+class PokemonCardData extends StatelessWidget { // Iniciando um StatelessWidget para os dados contidos em cada card
   final String name;
   final String image;
 
@@ -11,9 +11,9 @@ class PokemonCardData extends StatelessWidget {
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { // Criação do Widget
     return Column(
-      children: [
+      children: [ // Definindo como será o layout da imagem do pokemon dentro do card
         Expanded(
           child: Padding(
             padding: const EdgeInsets.all(11),
@@ -25,7 +25,7 @@ class PokemonCardData extends StatelessWidget {
           ),
         ),
         const Divider(),
-        Text(
+        Text( // Definindo o layout para o Texto contido no card
           "${name[0].toUpperCase()}${name.substring(1)}",
           style: const TextStyle(
             fontSize: 21,

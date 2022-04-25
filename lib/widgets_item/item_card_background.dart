@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'; // Importação da biblioteca "Material", auxílio em desenvlvimento flutter
 
-class ItemCardBackground extends StatelessWidget {
+class ItemCardBackground extends StatelessWidget { // Iniciando o StatelessWidget 
   final int id;
   const ItemCardBackground({ 
     Key? key, 
@@ -8,7 +8,7 @@ class ItemCardBackground extends StatelessWidget {
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { // Criação do Widget de definição do fundo da tela
     return Text(
       "$id",
       style: TextStyle(

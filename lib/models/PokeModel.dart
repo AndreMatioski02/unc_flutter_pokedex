@@ -1,4 +1,4 @@
-class Pokemon {
+class Pokemon { // Criação da classe "Pokemon" e definindo seus atributos
   int id;
   String name;
   String img;

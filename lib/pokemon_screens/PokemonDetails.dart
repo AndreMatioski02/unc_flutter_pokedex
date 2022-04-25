@@ -1,15 +1,16 @@
-import 'package:flutter/material.dart';
-import 'package:unc_flutter_pokedex/models/PokemonScreenData.dart';
-import 'package:unc_flutter_pokedex/widgets_pokemon/detail_back_button.dart';
-import 'package:unc_flutter_pokedex/widgets_pokemon/datail_title.dart';
-import 'package:unc_flutter_pokedex/widgets_pokemon/datail_image.dart';
+import 'package:flutter/material.dart'; // Importação da biblioteca "Material", auxílio em desenvlvimento flutter
+import 'package:unc_flutter_pokedex/models/PokemonScreenData.dart'; // Importando o model "ItemScreenData" para buscar as váriaveis necessárias
+
+import 'package:unc_flutter_pokedex/widgets_pokemon/detail_back_button.dart'; // Importando Widgets
+import 'package:unc_flutter_pokedex/widgets_pokemon/datail_title.dart';       // de details, presentes
+import 'package:unc_flutter_pokedex/widgets_pokemon/datail_image.dart';       // na pasta "widgets_pokemon"
 import 'package:unc_flutter_pokedex/widgets_pokemon/datail_data.dart';
 
-class Details extends StatelessWidget {
+class Details extends StatelessWidget { // Criando um StatelessWidget, onde atributos serão fixos na tela
   const Details({ Key? key }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { // Criação do Widget
     final arguments = 
       ModalRoute.of(context)!.settings.arguments as PokemonScreenData;
     return Scaffold(
@@ -32,7 +33,7 @@ class Details extends StatelessWidget {
           ],
         ),
       ),
-      floatingActionButton: const DatailBackButton(),
+      floatingActionButton: const DatailBackButton(), // Adicionando o botão de voltar à tela
       floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
     );
   }

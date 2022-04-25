@@ -3,7 +3,7 @@ import 'package:unc_flutter_pokedex/models/AbilityModel.dart';
 import 'package:unc_flutter_pokedex/widgets_ability/ability_card.dart';
 
 class AbilityGrid extends StatefulWidget {
-  // Criando a listagem que irá receber os Abilitys
+  // Criando a listagem que irá receber os Abilities
   final List<Ability> ability;
   const AbilityGrid({ 
     Key? key,
@@ -29,7 +29,7 @@ class _AbilityGridState extends State<AbilityGrid> {
           : 2;
 
 
-    return GridView.count(
+    return GridView.count( // Definindo o layout do Grid
       padding: const EdgeInsets.all(7),
       crossAxisCount: crossAxisCount,
       crossAxisSpacing: 4,
