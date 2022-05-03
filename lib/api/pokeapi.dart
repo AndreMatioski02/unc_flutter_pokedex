@@ -16,4 +16,7 @@ class PokeAPI { // Criação da classe para buscar dados utilizando a PokeAPI
 
   static Future<http.Response> getItem() => // Criação da função para recuperar dados dos itens dos pokemons
     http.get(Uri.parse("https://pokeapi.co/api/v2/item"));
+
+  static Future<http.Response> getPokemonDetails(String pokemonName) =>
+    http.get(Uri.parse("https://pokeapi.co/api/v2/pokemon$pokemonName"));
 }

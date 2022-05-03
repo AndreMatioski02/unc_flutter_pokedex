@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart'; // Importação da biblioteca "Material", auxílio em desenvlvimento flutter
 
 class PokemonCardBackground extends StatelessWidget { // Iniciando o StatelessWidget 
-  final int id;
+  final int? id;
   const PokemonCardBackground({ 
     Key? key, 
-    required this.id 
+    this.id 
   }) : super(key: key);
 
   @override

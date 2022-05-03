@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart'; // Importação da biblioteca "Material", auxílio em desenvlvimento flutter
 
 class PokemonCardData extends StatelessWidget { // Iniciando um StatelessWidget para os dados contidos em cada card
-  final String name;
-  final String image;
+  final String? name;
 
   const PokemonCardData({ 
     Key? key,
-    required this.name,
-    required this.image,
+    this.name,
   }) : super(key: key);
 
   @override
@@ -17,16 +15,15 @@ class PokemonCardData extends StatelessWidget { // Iniciando um StatelessWidget 
         Expanded(
           child: Padding(
             padding: const EdgeInsets.all(11),
-            child: Image.network(
-              image,
+             /* child: Image.network(
               fit: BoxFit.contain,
               alignment: Alignment.bottomRight,
-            ),
+            ), */
           ),
-        ),
+         ),
         const Divider(),
         Text( // Definindo o layout para o Texto contido no card
-          "${name[0].toUpperCase()}${name.substring(1)}",
+          "${name?[0].toUpperCase()}${name?.substring(1)}",
           style: const TextStyle(
             fontSize: 21,
             color: Colors.blue,

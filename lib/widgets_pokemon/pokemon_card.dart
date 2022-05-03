@@ -5,15 +5,15 @@ import 'package:unc_flutter_pokedex/widgets_pokemon/pokemon_card_background.dart
 import 'package:unc_flutter_pokedex/widgets_pokemon/pokemon_card_data.dart';        // da pasta "widgets_type"
 
 class PokemonCard extends StatelessWidget { // Iniciando um StatelessWidget e buscando as variáveis necessárias
-  final int id;
-  final String name;
-  final String image;
+  final int? id;
+  final String? name;
+  // final String image;
 
   const PokemonCard({ 
     Key? key,
-    required this.id,
-    required this.name,
-    required this.image,    
+    this.id,
+    this.name,
+    // required this.image,    
   }) : super(key: key);
 
   BoxDecoration getContainerDecoration() => BoxDecoration( // Definindo o formato de cada card que será mostrado
@@ -37,7 +37,7 @@ class PokemonCard extends StatelessWidget { // Iniciando um StatelessWidget e bu
           Navigator.pushNamed(
             context,
             "/details",
-            arguments: PokemonScreenData(id, name, image),
+            arguments: PokemonScreenData(id, name),
           )
         ),
         child: Container(
@@ -46,7 +46,7 @@ class PokemonCard extends StatelessWidget { // Iniciando um StatelessWidget e bu
           child: Stack(
             children: [
               PokemonCardBackground(id: id),
-              PokemonCardData(name: name, image:image),
+              PokemonCardData(name: name),
             ],
           ),
         ),

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart'; // Importação da biblioteca "Material", auxílio em desenvlvimento flutter
 
 class DatailTitle extends StatelessWidget { // Iniciando um StatelessWidget e buscando as variáveis necessárias
-  final int id;
-  final String name;
+  final int? id;
+  final String? name;
   const DatailTitle({ 
     Key? key,
-    required this.id,
-    required this.name
+    this.id,
+    this.name
   }) : super(key: key);
 
   @override
@@ -14,7 +14,7 @@ class DatailTitle extends StatelessWidget { // Iniciando um StatelessWidget e bu
     return Chip(
       backgroundColor: Colors.white,
       label: Text(
-        "${name[0].toUpperCase()}${name.substring(1)}",
+        "${name?[0].toUpperCase()}${name?.substring(1)}",
         style: const TextStyle(
           fontSize: 24,
           color: Colors.black

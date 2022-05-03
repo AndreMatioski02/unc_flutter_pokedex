@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart'; // Importação da biblioteca "Material", auxílio em desenvlvimento flutter
 import 'package:unc_flutter_pokedex/api/pokeapi.dart'; // Importando a pasta "pokeapi" para utilizar das funções presentes nela
-import 'package:unc_flutter_pokedex/models/PokeModel.dart'; // Importando o model "MoveModel.dart"
+import 'package:unc_flutter_pokedex/models/poke_model.dart'; // Importando o model "MoveModel.dart"
 import 'package:unc_flutter_pokedex/widgets_pokemon/pokemon_grid.dart'; // Importando o widget "pokemon_grid.dart"
 
 class Home extends StatefulWidget { // Criando um StatefulWidget, permitindo interação e modificação da tela criada
